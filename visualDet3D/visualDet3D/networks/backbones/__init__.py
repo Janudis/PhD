@@ -1,7 +1,6 @@
 from .resnet import resnet101, resnet152, resnet18, resnet34, resnet50, ResNet, resnet
 from .dla import dlanet
-#from visualDet3D.visualDet3D.networks.utils.registry import BACKBONE_DICT
-from visualDet3D.networks.utils.registry import BACKBONE_DICT
+from visualDet3D.visualDet3D.networks.utils.registry import BACKBONE_DICT
 
 def build_backbone(cfg):
     temp_cfg = cfg.copy()

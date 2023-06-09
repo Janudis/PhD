@@ -5,14 +5,11 @@ import torch.optim as optim
 from torchvision.ops import nms
 import numpy as np
 from functools import partial
-# from visualDet3D.visualDet3D.networks.heads.anchors import Anchors
-# from visualDet3D.visualDet3D.networks.utils.utils import calc_iou
-# from visualDet3D.visualDet3D.networks.lib.blocks import ConvReLU, AnchorFlatten
-# from visualDet3D.visualDet3D.networks.heads.losses import SigmoidFocalLoss, IoULoss
-from visualDet3D.networks.heads.anchors import Anchors
-from visualDet3D.networks.utils.utils import calc_iou
-from visualDet3D.networks.lib.blocks import ConvReLU, AnchorFlatten
-from visualDet3D.networks.heads.losses import SigmoidFocalLoss, IoULoss
+from visualDet3D.visualDet3D.networks.heads.anchors import Anchors
+from visualDet3D.visualDet3D.networks.utils.utils import calc_iou
+from visualDet3D.visualDet3D.networks.lib.blocks import ConvReLU, AnchorFlatten
+from visualDet3D.visualDet3D.networks.heads.losses import SigmoidFocalLoss, IoULoss
+
 class RetinanetHead(nn.Module):
     """Some Information about RetinanetHead"""
     def __init__(self,  stacked_convs=4,

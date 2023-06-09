@@ -6,13 +6,11 @@ from torchvision.ops import nms
 from easydict import EasyDict
 import numpy as np
 
-# from visualDet3D.visualDet3D.networks.heads.losses import IoULoss
-# from visualDet3D.visualDet3D.networks.utils.rtm3d_utils import _transpose_and_gather_feat,\
-#       _nms, _topk, decode_depth_inv_sigmoid, decode_depth_from_keypoints
-from .km3d_head import KM3DHead
-from visualDet3D.networks.heads.losses import IoULoss
-from visualDet3D.networks.utils.rtm3d_utils import _transpose_and_gather_feat,\
+from visualDet3D.visualDet3D.networks.heads.losses import IoULoss
+from visualDet3D.visualDet3D.networks.utils.rtm3d_utils import _transpose_and_gather_feat,\
       _nms, _topk, decode_depth_inv_sigmoid, decode_depth_from_keypoints
+from .km3d_head import KM3DHead
+
 
 class MonoFlexHead(KM3DHead):
 
